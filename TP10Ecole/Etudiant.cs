@@ -14,5 +14,11 @@ namespace Classes.ClassesEcole
         {
             this.section = section;
         }
+
+        public override string ToString()
+        {
+            return $@"{ base.ToString()}
+                      Section : {this.section}";
+        }
     }
 }
