@@ -19,6 +19,28 @@ namespace Classes.ClassesEcole
             this.AnneeArrivee = anneeArrivee;
         }
 
-        public int AnneeArrivee { get => anneeArrivee; set => anneeArrivee = value; }
+        public int AnneeArrivee
+        {
+            get => anneeArrivee;
+            private set
+            {
+                if (value < DateTime.Today.Year)
+                {
+                    anneeArrivee = value;
+                }
+                else
+                {
+                    throw new Exception("Erreur, l'année d'arrivée est supérieur à l'année actuelle");
+                }
+            }
+        }
+
+        public override string ToString()
+        {
+            return $@"{this.GetType().Name}
+                    Matricule : {this.matricule}
+                    Nom : {this.nom}
+                    Annee : {this.anneeArrivee}";
+        }
     }
 }

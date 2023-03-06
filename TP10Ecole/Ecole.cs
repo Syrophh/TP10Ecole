@@ -50,6 +50,9 @@ namespace Classes.ClassesEcole
             return (contact is Etudiant);
         }
 
-
+        public int NbContacts()
+        {
+            return contacts.Count;
+        }
     }
 }
