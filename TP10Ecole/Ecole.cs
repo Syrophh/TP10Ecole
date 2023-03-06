@@ -44,5 +44,12 @@ namespace Classes.ClassesEcole
             }
             return anciennetéTotal /= i;
         }
+
+        public bool EstEtudiant(Object contact)
+        {
+            return (contact is Etudiant);
+        }
+
+
     }
 }
