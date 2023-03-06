@@ -38,9 +38,9 @@ namespace Classes.ClassesEcole
         public override string ToString()
         {
             return $@"{this.GetType().Name}
-                    Matricule : {this.matricule}
-                    Nom : {this.nom}
-                    Annee : {this.anneeArrivee}";
+Matricule : {this.matricule}
+Nom : {this.nom}
+Annee : {this.anneeArrivee}";
         }
     }
 }
