@@ -14,14 +14,35 @@ namespace Classes.ClassesEcole
 
         public Ecole(string nom, int année, Dictionary<int, Contact> contacts)
         {
-            this.nom = nom;
-            this.année = année;
-            this.contacts = contacts;
+            this.Nom = nom;
+            this.Année = année;
+            this.Contacts = contacts;
         }
 
-        public string afficheTous()
-        {
+        public string Nom { get => nom; set => nom = value; }
+        public int Année { get => année; set => année = value; }
+        internal Dictionary<int, Contact> Contacts { get => contacts; set => contacts = value; }
 
+        public string AfficheTous()
+        {
+            string texte = "";
+            foreach (KeyValuePair<int, Contact> contact in this.contacts)
+            {
+                texte += contact.Value.ToString();
+            }
+            return texte;
+        }
+
+        public double AnciennetéMoyenne()
+        {
+            double anciennetéTotal = 0.0;
+            int i = 0;
+            foreach (KeyValuePair<int, Contact> contact in this.contacts)
+            {
+                anciennetéTotal += contacts[i].AnneeArrivee;
+                i++;
+            }
+            return anciennetéTotal /= i;
         }
     }
 }

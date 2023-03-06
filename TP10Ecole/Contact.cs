@@ -16,7 +16,9 @@ namespace Classes.ClassesEcole
         {
             this.matricule = matricule;
             this.nom = nom;
-            this.anneeArrivee = anneeArrivee;
+            this.AnneeArrivee = anneeArrivee;
         }
+
+        public int AnneeArrivee { get => anneeArrivee; set => anneeArrivee = value; }
     }
 }
