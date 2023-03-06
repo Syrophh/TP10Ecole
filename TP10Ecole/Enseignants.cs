@@ -4,9 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TD10Ecole
+namespace Classes.ClassesEcole
 {
     class Enseignants
     {
+        private string section;
+
+        public Enseignants(string section)
+        {
+            this.section = section;
+        }
     }
 }

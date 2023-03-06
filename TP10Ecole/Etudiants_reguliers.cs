@@ -4,9 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TD10Ecole
+namespace Classes.ClassesEcole
 {
     class Etudiants_reguliers
     {
+        private double noteMoyenne;
+
+        public Etudiants_reguliers(double noteMoyenne)
+        {
+            this.noteMoyenne = noteMoyenne;
+        }
     }
 }

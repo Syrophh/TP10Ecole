@@ -49,6 +49,7 @@
     <Compile Include="Etudiant.cs" />
     <Compile Include="Etudiants_echange.cs" />
     <Compile Include="Etudiants_reguliers.cs" />
+    <Compile Include="Personnel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Secretaires.cs" />
