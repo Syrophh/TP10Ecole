@@ -16,9 +16,11 @@ namespace Classes.ClassesEcole
         {
             this.matricule = matricule;
             this.nom = nom;
-            this.AnneeArrivee = anneeArrivee;
+            this.anneeArrivee = anneeArrivee;
         }
 
+        public int Matricule { get => matricule; set => matricule = value; }
+        public string Nom { get => nom; set => nom = value; }
         public int AnneeArrivee
         {
             get => anneeArrivee;
@@ -34,6 +36,7 @@ namespace Classes.ClassesEcole
                 }
             }
         }
+
 
         public override string ToString()
         {

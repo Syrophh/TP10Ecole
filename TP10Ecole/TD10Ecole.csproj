@@ -47,8 +47,8 @@
     <Compile Include="Ecole.cs" />
     <Compile Include="Enseignants.cs" />
     <Compile Include="Etudiant.cs" />
-    <Compile Include="Etudiants_echange.cs" />
-    <Compile Include="Etudiants_reguliers.cs" />
+    <Compile Include="EtudiantEchange.cs" />
+    <Compile Include="EtudiantsReguliers.cs" />
     <Compile Include="Personnel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

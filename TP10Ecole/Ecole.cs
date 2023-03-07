@@ -52,7 +52,30 @@ namespace Classes.ClassesEcole
 
         public int NbContacts()
         {
-            return contacts.Count;
+            return this.contacts.Count;
+        }
+
+        //public double MoyenneEtudiantRegulier()
+        //{
+            
+        //}
+
+        public void AjouterContact(Contact contact)
+        {
+            this.contacts.Add(contact.Matricule, contact);
+        }
+
+        public int NbEtudiant()
+        {
+            int etu = 0;
+            foreach(Contact contact in contacts.Values)
+            {
+                if (contact is Etudiant)
+                {
+                    etu++;
+                }
+            }
+            return etu;
         }
     }
 }

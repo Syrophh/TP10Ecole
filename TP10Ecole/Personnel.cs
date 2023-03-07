@@ -16,5 +16,11 @@ namespace Classes.ClassesEcole
             this.nomLaboratoire = nomLaboratoire;
             this.salaire = salaire;
         }
+        public override string ToString()
+        {
+            return $@"{this.GetType()}
+Nom du laboratoire : {this.nomLaboratoire}
+Salaire : {this.salaire}";
+        }
     }
 }
